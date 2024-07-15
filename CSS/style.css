@@ -134,6 +134,9 @@ main > section{
 }
 /* some facts related style ends */
 /* sponsors related style start */
+.feature{
+    gap: 140px;
+}
 .sponsor-info{
     max-width: 540px;
     margin: 50px auto;
@@ -146,6 +149,24 @@ main > section{
 }
 .sponsor-companies img{
     filter: grayscale(100%);
+}
+#feature-section-title{
+    border-left: 7px solid #FF900E;
+    padding-left: 21px;
+}
+.feature-card{
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
 }
 /* sponosrs related style ends */
 /* responsive media query */
