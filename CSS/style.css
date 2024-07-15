@@ -1,9 +1,130 @@
 /* shared style */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+.display-flex{
+    display: flex;
+}
 .work-sans {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: none;
+
+}
+main{
+    max-width:1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.text-primary{
+    color: #FF900E;
+}
+/* section title */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+/* dark2 */
+.text-gray{
+    color: #424242;
+}
+/* dark3 */
+.text-dark-gray{
+    color:#727272;
+}
+.bg-light{
+   background-color: rgba(255, 144, 14, 0.1);
+}
+/* header style starts */
+
+/* header style ends */
+/* nav related style starts */
+.nav-items{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.brand{
+    font-weight: 700px;
+    font-size: 3rem;
+}
+/* nav related style ends */
+/* banner related style starts */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.banner-title{
+    font-weight: 700px;
+    font-size: 4rem; 
+}
+.banner-image{
+    width: 100%;
+
+}
+/* banner relate style ends */
+/* team part design starts */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width:530px;
+}
+#quick-list{
+    font-weight: 500;
+}
+/* team part design ends */
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-link,
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+/* medium device responsiveness */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
+    }
+    
 }
